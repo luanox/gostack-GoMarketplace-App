@@ -79,7 +79,7 @@ const Cart: React.FC = () => {
                   </ProductSinglePrice>
 
                   <TotalContainer>
-                    <ProductQuantity>{`${item.quantity}x`}</ProductQuantity>
+                    <ProductQuantity>{`${item.quantity}`}</ProductQuantity>
 
                     <ProductPrice>
                       {formatValue(item.price * item.quantity)}
@@ -107,7 +107,7 @@ const Cart: React.FC = () => {
       </ProductContainer>
       <TotalProductsContainer>
         <FeatherIcon name="shopping-cart" color="#fff" size={24} />
-        <TotalProductsText>{`${totalItensInCart} itens`}</TotalProductsText>
+        <TotalProductsText>{`${totalItensInCart} itensx`}</TotalProductsText>
         <SubtotalValue>{cartTotal}</SubtotalValue>
       </TotalProductsContainer>
     </Container>
